@@ -1,4 +1,4 @@
-// I/O shield for X
+// I/O shield for Asus P2L98-XV
 
 // based on blank_v01
 translate([-3.5, -3.5, 0]) union() {
@@ -22,8 +22,8 @@ translate([-3.5, -3.5, 0]) union() {
             translate([7, 8, 0]) {
             
                 // ps2-ps2
-                translate([3.5, 0, 0]) cylinder(3, 6, 6);
-                translate([3.5, 15.5, 0]) cylinder(3, 6, 6);
+                translate([3.5, 0, 0]) cylinder(3, 6, 6, $fn=100);
+                translate([3.5, 15.5, 0]) cylinder(3, 6, 6, $fn=100);
             
                 // usb-usb
                 translate([14.9, -6.3, 0]) cube([15, 7, 3]);
@@ -64,9 +64,9 @@ translate([-3.5, -3.5, 0]) union() {
                 
                 // sound 3.5mms
                 translate([113.5, 0, 0]) {
-                    translate([0, 0, 0]) cylinder(3, 5.2, 5.2);
-                    translate([12.5, 0, 0]) cylinder(3, 5.2, 5.2);
-                    translate([25, 0, 0]) cylinder(3, 5.2, 5.2);
+                    translate([0, 0, 0]) cylinder(3, 5.2, 5.2, $fn=100);
+                    translate([12.5, 0, 0]) cylinder(3, 5.2, 5.2, $fn=100);
+                    translate([25, 0, 0]) cylinder(3, 5.2, 5.2, $fn=100);
                 }
             }
         }
